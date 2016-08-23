@@ -15,7 +15,12 @@ class Xmas
 
 			output+=gift+"\n"
 		end
-		output+= "\n"
+
+		if(num != 11)
+			output+= "\n"
+		else
+			output = output.chomp("\n")
+		end
 
 		return output
 	end
