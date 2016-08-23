@@ -1,7 +1,4 @@
 class Hamming
-# 	def initialize
-# 	end
-
 	def self.compute(strand1, strand2)
 		if(strand1.length != strand2.length)
 			raise ArgumentError.new
@@ -17,5 +14,3 @@ class Hamming
 		return differences
 	end
 end
-
-# Hamming.new
